@@ -64,7 +64,7 @@
         compatible = "zmk,combos";
 
         layer_3 {
-            bindings = <&to 3>;
+            bindings = <&tog 3>;
             key-positions = <39 42>;
             timeout-ms = <70>;
         };
