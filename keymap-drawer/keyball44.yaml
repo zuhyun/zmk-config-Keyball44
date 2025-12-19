@@ -108,7 +108,7 @@ layers:
   - PREVIOUS
   - PLAY
   - $$mdi:skip-next$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Sft+`, s: Sft+~}
   - {t: '-', s: _}
   - {t: '=', s: +}
   - {t: '[', s: '{'}
@@ -120,7 +120,7 @@ layers:
   - Alt+6
   - Alt+8
   - Alt+9
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '`', s: '~'}
   - {t: Sft+-, s: Sft+_}
   - +
   - {t: 'Sft+[', s: 'Sft+{'}
