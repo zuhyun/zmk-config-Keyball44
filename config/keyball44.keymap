@@ -60,6 +60,16 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        layer_3 {
+            bindings = <&to 3>;
+            key-positions = <39 42>;
+            timeout-ms = <70>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
