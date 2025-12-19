@@ -49,9 +49,9 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        comma_semicolom: comma_semicolom {
+        tap_and_hold: tap_and_hold {
             compatible = "zmk,behavior-hold-tap";
-            label = "COMMA_SEMICOLOM";
+            label = "TAP_AND_HOLD";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -76,10 +76,10 @@
         default_layer {
             label = "QWRT";
             bindings = <
-&kp ESCAPE        &kp Q     &kp W     &kp E        &kp R        &kp T                 &kp Y        &kp U  &kp I                             &kp O                         &kp P                             &kp BACKSPACE
-&kp TAB           &kp A     &kp S     &kp D        &kp F        &kp G                 &kp H        &kp J  &kp K                             &comma_semicolom RA(L) L      &kp SEMI                          &kp SQT
-&sk LEFT_SHIFT    &kp Z     &kp X     &kp C        &kp V        &kp B                 &kp N        &kp M  &comma_semicolom LS(COMMA) COMMA  &comma_semicolom LS(DOT) DOT  &comma_semicolom LS(SLASH) SLASH  &sk RIGHT_SHIFT
-&kp LEFT_CONTROL  &kp LALT  &kp LGUI  &lt 1 SPACE  &lt 5 SPACE             &kp ENTER  &lt 2 ENTER                                                                                                           &kp RIGHT_COMMAND
+&kp ESCAPE        &kp Q     &kp W     &kp E        &kp R        &kp T                 &kp Y        &kp U  &kp I                          &kp O                      &kp P                          &kp BACKSPACE
+&kp TAB           &kp A     &kp S     &kp D        &kp F        &kp G                 &kp H        &kp J  &kp K                          &tap_and_hold RA(L) L      &kp SEMI                       &kp SQT
+&sk LEFT_SHIFT    &kp Z     &kp X     &kp C        &kp V        &kp B                 &kp N        &kp M  &tap_and_hold LS(COMMA) COMMA  &tap_and_hold LS(DOT) DOT  &tap_and_hold LS(SLASH) SLASH  &sk RIGHT_SHIFT
+&kp LEFT_CONTROL  &kp LALT  &kp LGUI  &lt 1 SPACE  &lt 5 SPACE             &kp ENTER  &lt 2 ENTER                                                                                                  &kp RIGHT_COMMAND
             >;
         };
 
@@ -106,10 +106,10 @@
         function_layer {
             label = "FUN";
             bindings = <
-&bt BT_CLR  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &kp F4  &none                             &kp C_MUTE         &none  &none  &none  &none  &none
-&none       &none         &none         &none         &none   &kp C_BRIGHTNESS_INC              &kp C_VOLUME_UP    &none  &none  &none  &none  &none
-&none       &none         &none         &none         &none   &kp C_BRIGHTNESS_DEC              &kp C_VOLUME_DOWN  &none  &none  &none  &none  &none
-&trans      &trans        &trans        &trans        &trans                            &trans  &mo 3                                          &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 3  &bt BT_SEL 4  &none                             &kp C_MUTE         &none  &none  &none  &none  &none
+&none       &none         &none         &none         &none         &kp C_BRIGHTNESS_INC              &kp C_VOLUME_UP    &none  &none  &none  &none  &none
+&none       &none         &none         &none         &none         &kp C_BRIGHTNESS_DEC              &kp C_VOLUME_DOWN  &none  &none  &none  &none  &none
+&trans      &trans        &trans        &trans        &trans                                  &trans  &trans                                         &trans
             >;
         };
 
