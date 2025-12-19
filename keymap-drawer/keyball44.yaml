@@ -22,7 +22,7 @@ layers:
   - H
   - J
   - K
-  - L
+  - {t: L, h: AltGr+L}
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
@@ -33,9 +33,9 @@ layers:
   - B
   - N
   - M
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
-  - {t: /, s: '?'}
+  - {t: ',', h: 'Sft+,', s: <}
+  - {t: ., h: Sft+., s: '>'}
+  - {t: /, h: Sft+/, s: '?'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
