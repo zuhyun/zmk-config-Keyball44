@@ -14,9 +14,9 @@
 #include <dt-bindings/zmk/pointing.h>
 
 &lt {
-    tapping-term-ms = <240>;
-    flavor = "balanced";
-    quick-tap-ms = <150>;
+    tapping-term-ms = <180>;
+    flavor = "hold-preferred";
+    quick-tap-ms = <80>;
 };
 
 &mt {
@@ -96,10 +96,10 @@
         symbol_layer {
             label = "SYM";
             bindings = <
-&none       &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)                 &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)      &kp LS(NUMBER_8)       &kp LS(NUMBER_9)  &kp RA(BACKSPACE)
-&none       &none             &kp C_PREVIOUS    &kp C_PLAY        &kp C_NEXT        &kp LS(GRAVE)                    &kp MINUS         &kp EQUAL         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SQT           &kp NON_US_BACKSLASH
-&kp LSHIFT  &kp LA(NUMBER_5)  &kp LA(NUMBER_6)  &kp LA(NUMBER_8)  &kp LA(NUMBER_9)  &kp GRAVE                        &kp LS(MINUS)     &kp PLUS          &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp BACKSLASH     &none
-&trans      &trans            &trans            &trans            &kp SPACE                               &kp ENTER  &trans                                                                                             &trans
+&none       &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)                 &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)      &kp LS(NUMBER_9)       &kp LS(NUMBER_0)   &kp RA(BACKSPACE)
+&none       &none             &kp C_PREVIOUS    &kp C_PLAY        &kp C_NEXT        &kp LS(GRAVE)                    &kp MINUS         &kp EQUAL         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSLASH      &kp NON_US_BACKSLASH
+&kp LSHIFT  &kp LA(NUMBER_5)  &kp LA(NUMBER_6)  &kp LA(NUMBER_8)  &kp LA(NUMBER_9)  &kp GRAVE                        &kp LS(MINUS)     &kp PLUS          &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp LS(BACKSLASH)  &none
+&trans      &trans            &trans            &trans            &kp SPACE                               &kp ENTER  &trans                                                                                              &trans
             >;
         };
 
@@ -116,10 +116,10 @@
         mouse_layer {
             label = "MOUSE";
             bindings = <
-&trans  &trans          &trans          &trans        &trans     &trans              &trans         &trans     &trans     &trans     &trans  &trans
-&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans              &kp PAGE_UP    &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &trans
-&trans  &trans          &trans          &trans        &trans     &trans              &kp PAGE_DOWN  &trans     &trans     &trans     &trans  &trans
-&trans  &trans          &trans          &trans        &trans                 &trans  &trans                                                  &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans         &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &kp PAGE_UP    &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &kp PAGE_DOWN  &mo 6      &mo 5      &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans              &trans  &trans                                                  &trans
             >;
         };
 
