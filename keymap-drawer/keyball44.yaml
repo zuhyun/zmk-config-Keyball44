@@ -113,7 +113,7 @@ layers:
   - {t: '=', s: +}
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - {t: Sft+\, h: \, s: Sft+|}
+  - {t: \, h: Sft+\, s: '|'}
   - \
   - $$mdi:apple-keyboard-shift$$
   - Alt+5
